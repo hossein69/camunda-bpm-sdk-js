@@ -1,3 +1,7 @@
 'use strict';
+var moment = require('moment-jalaali');
+moment.loadPersian({
+  dialect: 'persian-modern'
+});
 
-module.exports = require('moment');
+module.exports = moment;
